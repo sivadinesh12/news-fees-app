@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+.news-feed-app {
+  height: 100vh;
+}
+.articles-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown {
+  background-color: #001f3f;
+  color: #ffffff;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  align-self: center;
+}
+.news-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  overflow-y: auto;
+  width: 100%;
+  justify-content: center;
+}
+.main-heading{
+  font-family: 'Besley', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #3B3030;
+}
+
+@media screen and (max-width: 480px) {
+  .news-feed-app {
+    height: 100vh;
+  }
+  .articles-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdown {
+    background-color: #001f3f;
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .news-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    overflow-y: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  .card-link{
+
+    border-radius: 20px;
+    border: 1px transparent;
+    background-color: #001f3f;
+    padding: 5px;
+    color: #ffffff;
+  }
+}

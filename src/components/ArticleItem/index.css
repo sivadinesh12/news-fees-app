@@ -1,0 +1,25 @@
+.article-img {
+  width: 100%;
+}
+.article-item{
+width: 40%;
+margin-bottom: 20px;
+}
+.description{
+  color: darkgrey;
+  font-size: 20px;
+  margin-top: 13px;
+}
+@media screen and (max-width: 480px) {
+  .article-img {
+    width:100%
+  }
+  .article-item{
+    width: 100%;
+  }
+  .description{
+    color: darkgrey;
+  font-size: 20px;
+  margin-top: 10px;
+  }
+}
