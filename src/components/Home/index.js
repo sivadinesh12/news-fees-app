@@ -15,6 +15,7 @@ const Home = () => {
         const response = await fetch(api, {
           method: "GET",
           headers: {
+            Authorization: "Bearer 43669a7f9aca41ce9a138e8699bbc8a4",
             Accept: "application/json",
           },
         });
