@@ -6,11 +6,16 @@ import "./index.css";
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const api =
-    "https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=43669a7f9aca41ce9a138e8699bbc8a4";
+    "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=43669a7f9aca41ce9a138e8699bbc8a4";
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const response = await fetch(api);
+      const response = await fetch(api, {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+        },
+      });
       if (response.ok) {
         const data = await response.json();
         setArticles(data.articles);
