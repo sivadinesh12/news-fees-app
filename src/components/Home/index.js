@@ -12,7 +12,12 @@ const Home = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch(api);
+        const response = await fetch(api, {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+          },
+        });
         if (response.ok) {
           console.log("news Fetched successfully");
           const data = await response.json();
